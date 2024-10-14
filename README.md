@@ -11,6 +11,7 @@ Mini project 2 DDP
 
 ##program 
 Dalam program ini, saya menggunakan function, looping, percabangan if else elif, dan PrettyTable
+
 ### Utama
 Bagian utama untuk mengkonfirmasi apakah pengguna masuk sebagai penyew atau sebagai admin. Jika masuk sebagai penyewa, maka harus memasukkan nama penyewa. Menggunakan percabangan, dan pemanggilan fungsi
 ```
@@ -51,6 +52,7 @@ Kendaraan.add_row([14, "Motor", "Yamaha Mio S", 50000])
 ```
 
 ##Menu Penyewa + transaksi
+
 Jika berhasil masuk sebagai penyewa, maka akan ditampilkan menu khusus penyewa. Pengguna dapat mengakses menu "Lihat Kendaraan, "Sewa Kendaraan", dan "Keluar". Program dapat dihentikan dengan memilih opsi ketiga pada menu, atau saat penyewa tidak ingin melanjutkan proses penyewaan kendaraan. Penggunaan fungsi dalam program bertujuan untuk memudahkan pengelolaan kode dan memperjelas struktur program. Selain itu, penggunaan loop memastikan bahwa program tidak berhenti meskipun ada input yang tidak valid, sehingga pengguna dapat terus menginput ulang data yang benar tanpa harus memulai program dari awal.
 ```
 def main():
@@ -79,6 +81,7 @@ def main():
 ```
 
 ##Menu Admin
+
 Setelah berhasil masuk sebagai admin, akan ditampilkan menu khusus admin dengan wewenang untuk menambah (Create), menampilkan (Read), mengubah (Update), dan menghapus data kendaraan (Delete). Dengan menggunakan while loop, disediakan opsi untuk keluar agar admin dapat mengakhiri program. Setiap opsi di menu memanggil fungsi yang sesuai, kecuali untuk opsi keluar program.
 ```
 def loginadmin():
@@ -122,6 +125,7 @@ def menuAdmin():
 ```
 
 ###Menambah Data Kendaraan (Create)
+
 Jika admin memilih opsi.1 maka admin dapat menambahkan jenis,nama, dan harga sewa perhari kendaraan baru
 ```
 def create():
@@ -137,6 +141,7 @@ def create():
 ```
 
 ###Menampilakan Data Kendaraan (Read)
+
 Jika admin emmilih opsi.2 maka admin dapat melihat langsung daftar kendaraan, jika daftar kendaraan telah diubah anda juga dapat melihatnya di opsi 2 ini.
 ```
 def read():
@@ -144,6 +149,7 @@ def read():
 ```
 
 ###Mengubah Data Kendaraan (Update)
+
 Jika admin memilih opsi.3 maka admin dapat mengubah data kendaraan dengan memasukkan id kendaraan pada list kendaraan untuk mengidentifikasi kendaraan yang ingin diubah
 ```
 def update():
@@ -165,6 +171,7 @@ def update():
 ```
 
 ###Menghapus Data Kendaraan (Delete)
+
 Jika admin memilih opsi.4 maka admin dapat menghapus data kendaraan dengan memasukkan id kendaraan pada list kendaraan untuk mengidentifikasi kendaraan yang ingin dihapus
 ```
 def delete():
@@ -187,6 +194,7 @@ def delete():
 ```
 
 ###Keluar (opsi tambahan)
+
 Opsi ini merupakan tambahan bagi admin untuk keluar dari program. Jika admin memilih opsi 5, program akan langsung dihentikan.
 ```
 elif pilihmenu == 5:
